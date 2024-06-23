@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet";
 import { FaArrowRight } from "react-icons/fa6";
 import { TfiMinus } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 const About = () => {
     return (
         <div className="bg-gray-900 pt-24 md:pt-32 px-4">
+            <Helmet>
+                <title>SJNR. | About</title>
+            </Helmet>
             <div className="grid grid-cols-1 md:grid-cols-2 justify-between container mx-auto items-center p-5 gap-5 text-white">
                 <div>
                     <h1 className="text-3xl font-bold text-center pb-5 ">PERSONAL <span className="text-yellow-500">INFOS</span></h1>

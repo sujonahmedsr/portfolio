@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 
 const Contact = () => {
@@ -32,6 +33,9 @@ const Contact = () => {
       };
     return (
         <div className="bg-gray-900 md:h-screen flex items-center justify-center md:pt-0 pt-20 px-4">
+            <Helmet>
+                <title>SJNR. | Contact</title>
+            </Helmet>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center container mx-auto">
                 <div className="py-6 text-white">
                     <h1 className="text-4xl font-bold">Get in <span className="text-yellow-500">touch</span></h1>

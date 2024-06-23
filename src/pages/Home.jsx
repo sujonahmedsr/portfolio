@@ -6,9 +6,13 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import profile from '../assets/profile.png'
 import shofiqulIslamResume from '../assets/shofiqulIslam(Front End Developer).pdf';
+import { Helmet } from "react-helmet";
 const Home = () => {
     return (
         <div className="bg-gray-900 md:h-screen flex items-center justify-center md:pt-0 pt-20">
+            <Helmet>
+                <title>SJNR. | Home</title>
+            </Helmet>
             <div className="grid grid-cols-1 md:grid-cols-2 justify-between container mx-auto items-center p-5 gap-5">
                 <div>
                     <img src={profile} className="w-full md:w-3/4 md:h-[500px] border md:rounded-full bg-yellow-500 hover:scale-110 md:hover:rotate-12 duration-300 mx-auto"  alt="My Pic" />
