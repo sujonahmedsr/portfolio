@@ -46,7 +46,7 @@ const Navbar = () => {
                         <NavLink onClick={() => setShow(!show)} to={'/about'}>
                             <li>About</li>
                         </NavLink>
-                        <NavLink onClick={() => setShow(!show)} to={'/portfolio'}>
+                        <NavLink onClick={() => setShow(!show)} to={'/Portfolio'}>
                             <li>Portfolio</li>
                         </NavLink>
                         <NavLink onClick={() => setShow(!show)} to={'/contact'}>

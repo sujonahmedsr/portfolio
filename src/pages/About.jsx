@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { FaArrowRight } from "react-icons/fa6";
 import { TfiMinus } from "react-icons/tfi";
 import { Link } from "react-router-dom";
+import Card from "./Card";
 const About = () => {
     return (
         <div className="bg-gray-900 pt-24 md:pt-32 px-4">
@@ -121,7 +122,36 @@ const About = () => {
                         <h1 className="text-2xl font-bold">GIT & GITHUB</h1>
                     </div>
                 </div>
-
+            </div>
+            <div className="text-white pt-24 container mx-auto text-center">
+                <h1 className="text-3xl font-bold text-center uppercase">Education<span className="text-yellow-500"> & Courses</span></h1>
+                <div className="py-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <h1 className="text-3xl font-bold text-center uppercase">Courses</h1>
+                        <div className="mt-6 lg:mt-14 w-full border-l-[6px] border-l-yellow-500 flex flex-col gap-10">
+                            <Card
+                                title="Front End Web Development"
+                                subTitle="Programming Hero"
+                                des="I have completed my frontend web development course from Programming Hero."
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-3xl font-bold text-center uppercase">Education</h2>
+                        <div className="mt-6 lg:mt-14 w-full border-l-[6px] border-l-yellow-500 flex flex-col gap-10">
+                            <Card
+                                title="Diploma in Computer Science And Technology"
+                                subTitle="Sirajganj Polytechnic Institute (2021 - 2024)"
+                                des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+                            />
+                            <Card
+                                title="Secondary School Certificate."
+                                subTitle="M.S.A High School(2019 - 2020)"
+                                des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
